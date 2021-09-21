@@ -4,10 +4,12 @@ public class bankAccount {
     private double balance;
     private float interestRate;
     private int accountID;
-    private static int nextID;
+    private static int nextID = 100;
 
     public bankAccount()    {
         interestRate = 0.02f;
+        accountID = nextID;
+        nextID++;
     }
 
     public bankAccount(double initialBalance, float initialRate)    {
