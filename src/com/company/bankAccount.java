@@ -16,7 +16,7 @@ public class bankAccount {
         balance = initialBalance;
         interestRate = initialRate;
         accountID = nextID;
-        nextID++;
+        nextID += 1;
     }
 
     public int getAccountID()   {
