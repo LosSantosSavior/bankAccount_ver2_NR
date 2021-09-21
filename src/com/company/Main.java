@@ -13,6 +13,6 @@ public class Main {
         if (succeeded)
             System.out.println("You successfully withdrew money from your account.");
         else
-            System.out.println("Failure to withdraw money from your account. Your balance is: " + account.checkBalance());
+            System.out.println("Failure to withdraw money from your account. Your balance, with the account ID "+account.getAccountID()+ ", is: " + account.checkBalance());
     }
 }

@@ -15,6 +15,12 @@ public class bankAccount {
     public bankAccount(double initialBalance, float initialRate)    {
         balance = initialBalance;
         interestRate = initialRate;
+        accountID = nextID;
+        nextID += 1;
+    }
+
+    public int getAccountID()   {
+        return accountID;
     }
 
     public void deposit(double amount)  {
