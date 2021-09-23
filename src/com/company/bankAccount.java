@@ -16,14 +16,14 @@ public class bankAccount {
         balance = initialBalance;
         interestRate = initialRate;
         accountID = nextID;
-        nextID++;
+        nextID += 1;
     }
 
     public int getAccountID()   {
         return accountID;
     }
 
-    public void deposit(double amount)  {
+    public void deposit(double amount) {
         balance += amount;
     }
 
