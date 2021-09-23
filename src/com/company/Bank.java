@@ -21,14 +21,19 @@ public class Bank {
                 case 1:
                     System.exit(0);
                 case 2:
-                    addCustomer();
+                    addCustomer(menuReader);
                     break;
             }
         }
     }
 
-    private void addCustomer() {
-        System.out.println("Coming soon...");
+    private void addCustomer(Scanner inputReader) {
+        System.out.print("What is the new customer's name?");
+        var customerName = inputReader.nextLine();
+        System.out.print("What is the new customer's tax ID (SSN)?");
+        var taxID = inputReader.nextInt();
+        var newCustomer = new Customer(customerName, taxID);
+        allCustomers.add(newCustomer);
     }
 
     private void printMenu() {
