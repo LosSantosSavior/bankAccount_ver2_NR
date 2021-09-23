@@ -28,11 +28,12 @@ public class Bank {
     }
 
     private void addCustomer() {
-
+        System.out.println("Coming soon...");
     }
 
     private void printMenu() {
         System.out.println("What would you like to do next? (select a number from the options below)");
         System.out.println("[1] Exit the program\n[2] Add a customer\n[3] (WIP) ");
+        System.out.print("Enter a choice:");
     }
 }
