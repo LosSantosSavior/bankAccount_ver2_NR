@@ -38,7 +38,7 @@ public class Bank {
     }
 
     private void doCustomerMenu(Scanner menuReader) {
-        System.out.println("Will be finished next week");
+
     }
 
     private Optional<Customer> selectCustomer(Scanner reader) {
