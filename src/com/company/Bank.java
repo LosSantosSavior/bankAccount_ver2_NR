@@ -65,6 +65,11 @@ public class Bank {
     }
 
     private void doYearlyMaintenance() {
+        //for each account - call addInterest and then print account info
+        for (var currentAccount:allAccounts)    {
+            currentAccount.addInterest();
+            System.out.println("Account ID " +currentAccount.getAccountID()+ " has a balance of " +currentAccount.checkBalance());
+        }
     }
 
     private void closeCustomerAccount(Scanner menuReader, Customer currentCustomer) {
